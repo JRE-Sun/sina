@@ -4,8 +4,31 @@
     @return $px/37.5+rem;
 }
 
-body, html {
+p, h1, h2, a, body, html {
     padding: 0;
     margin: 0;
-    width: rem(20);
+    box-sizing: border-box;
 }
+
+bpdy, html {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.rotateY-back {
+    transform: rotateY(0);
+}
+
+.rotateY-180 {
+    transform: rotateY(180deg);
+}
+

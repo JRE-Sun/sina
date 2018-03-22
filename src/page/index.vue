@@ -1,6 +1,6 @@
 <template>
     <div>
-        <login-tpl></login-tpl>
+        gjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
     </div>
 </template>
 
@@ -18,9 +18,5 @@
 <style lang="scss">
     @function rem($px) {
         @return $px/37.5+rem;
-    }
-
-    div {
-        font-size: rem(30) !important;
     }
 </style>

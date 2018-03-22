@@ -8,31 +8,7 @@ Vue.use(Vuex)
 
 // 用来存放数据,或者状态
 const state = {
-    level     : '第一周', //活动周数
-    itemNum   : 0, // 第几题
-    itemDetail: [
-        {
-            id   : 0,
-            title: '1+1=?',
-            item : ['1', '2', '3', '4']
-        },
-        {
-            id   : 1,
-            title: '1+2=?',
-            item : ['1', '2', '3', '4']
-        },
-        {
-            id   : 2,
-            title: '1+3=?',
-            item : ['1', '2', '3', '4']
-        },
-        {
-            id   : 3,
-            title: '1+4=?',
-            item : ['1', '2', '3', '4']
-        }
-    ],
-    answerid  : [], //答案id
+    userName: false, // 用来存储判断视乎是否已经登陆
 }
 
 export default new Vuex.Store({

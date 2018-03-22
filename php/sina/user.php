@@ -6,7 +6,7 @@ namespace sina;
 use ext\http;
 
 //类名保持和文件名一致
-class index
+class user
 {
 
     public static $tz = [
