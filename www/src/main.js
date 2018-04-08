@@ -3,13 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+// 引入store
+import store from './store/index'
+import axios from 'axios'
+Vue.prototype.$axios = axios
+import style from './assets/css/style.css';
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+    el        : '#app',
+    router,
+    store,
+    components: {App},
+    template  : '<App/>'
 })

@@ -1,38 +1,13 @@
 <template>
-    <div id="app">
-        <img src="./assets/logo.png">
-        <loading v-model="showLoading" :text="loadText"></loading>
-        <router-view/>
-    </div>
+    <router-view/>
 </template>
 
 <script>
-    import {Loading} from 'vux'
-    import {AlertModule} from 'vux'
-
     export default {
-        name      : 'App',
+        name: 'App',
         data() {
-            return {
-                showLoading: true,
-                loadText   : 'Loading',
-            }
+            return {}
         },
-        components: {
-            Loading
-        },
-        mounted   : function () {
-            AlertModule.show({
-                title  : 'VUX is Cool',
-                content: 'Do you agree?',
-                onShow() {
-                    console.log('Module: I\'m showing')
-                },
-                onHide() {
-                    console.log('Module: I\'m hiding now')
-                }
-            })
-        }
     }
 </script>
 
