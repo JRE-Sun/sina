@@ -1,9 +1,10 @@
+import Vue from 'vue'
 export default {
     setTimeLine(state, data) {
         const index    = data.index;
         const dataList = data.data;
         if (typeof state.dataList[index] == 'undefined') {
-            state.dataList[index] = [];
+            Vue.set(state.dataList, index, [])
         }
         for (const i in dataList) {
             state.dataList[index].push({
