@@ -1,5 +1,10 @@
 <template>
-    <panel type="1" :list="dataList[headerSelectIndex]"></panel>
+    <router-link to="/detail">
+        <div>
+            <p>1</p>
+        </div>
+    </router-link>
+    <!--<panel  type="1" :list="dataList[headerSelectIndex]"></panel>-->
     <!--<p v-for="item in dataList">{{ item.ltitle }}</p>-->
 </template>
 <script>
@@ -16,7 +21,7 @@
         },
         computed  : mapState(['dataList', 'headerSelectIndex']),
         mounted   : function () {
-            console.log(this.dataList[this.headerSelectIndex]);
+
         }
     }
 </script>

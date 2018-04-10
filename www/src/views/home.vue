@@ -5,9 +5,14 @@
             <tab-item v-for="(item,index) in headerList" v-bind:key="index" @on-item-click="onItemClick">{{ item }}
             </tab-item>
         </tab>
+        <router-link to="/list">
+            <div>
+                <p>llll</p>
+            </div>
+        </router-link>
         <swiper v-model="headerSelectIndex" :show-dots="false" height="575px">
-            <swiper-item class="swiper-demo-img" v-for="index in headerList[headerSelectIndex].length" v-bind:key="index">
-                <time-line></time-line>
+            <swiper-item class="swiper-demo-img" v-for="index in headerList.length" v-bind:key="index">
+                <time-line v-for="(item,index) in dataList[headerSelectIndex]" v-bind:key="index"></time-line>
             </swiper-item>
         </swiper>
     </div>
@@ -27,7 +32,7 @@
                 headerList  : ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻'],
             }
         },
-        computed  : mapState(['api', 'headerSelectIndex']),
+        computed  : mapState(['dataList', 'api', 'headerSelectIndex']),
         components: {
             headerTpl,
             timeLine,
@@ -45,10 +50,12 @@
                 const self = this;
                 self.setHeaderSelectIndex(index);
                 this.$axios.get(this.api + 'News/new_list?type=' + index + '&page=10').then(function (res) {
-                    self.setTimeLine({
-                        index: index,
-                        data : res.data.data
-                    });
+                    setTimeout(function () {
+                        self.setTimeLine({
+                            index: index,
+                            data : res.data.data
+                        });
+                    }, 400);
                 }).catch(function () {
 
                 });
