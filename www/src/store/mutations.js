@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 export default {
     setTimeLine(state, data) {
         const index    = data.index;
@@ -11,12 +12,19 @@ export default {
                 src  : dataList[i].imgsrc,
                 title: dataList[i].title,
                 desc : dataList[i].digest,
-                url  : state.api + 'News/new_detail?' + dataList[i].postid,
+                url  : dataList[i].postid,
             });
         }
     },
     setHeaderSelectIndex(state, data) {
         state.headerSelectIndex = data;
     },
-
+    /**
+     *
+     * @param state
+     * @param data
+     */
+    setHeaderTitle(state, data) {
+        state.headerTitle = data;
+    }
 }

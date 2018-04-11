@@ -12,6 +12,7 @@ const state = {
     userName         : true, // 用来存储判断视乎是否已经登陆
     dataList         : [], // 存放timeline里的数据
     headerSelectIndex: 0, // header导航
+    headerTitle      : "",
 }
 
 export default new Vuex.Store({

@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name   : 'App',
+        name : 'App',
         data() {
             return {
                 isShow        : false,
@@ -16,22 +16,29 @@
             }
         },
         beforeRouteUpdate(to, from, next) {
+            console.log(this.$router.isBack);
             let isBack = this.$router.isBack
             if (isBack) {
                 this.transitionName = 'vux-pop-out'
-                console.log(1);
             } else {
                 this.transitionName = 'vux-pop-in'
-                console.log(2);
             }
             this.$router.isBack = false
             next()
         },
-        methods: {
-            aa() {
-                this.isShow         = !this.isShow;
-                this.transitionName = this.transitionName == 'vux-pop-in' ? 'vux-pop-out' :
-                    'vux-pop-in';
+        watch: {
+            '$route'(to, from) {
+                console.log('前一页 from = ' + from.query.key)
+                console.log('准备进入的页面是  to = ' + to.query.key)
+                if (from.query.key) {
+                    if (to.query.key > from.query.key) {
+                        this.transitionName = 'vux-pop-in'
+                    } else {
+                        this.transitionName = 'vux-pop-out'
+                    }
+                } else {
+                    this.transitionName = 'vux-pop-in'
+                }
             }
         }
     }
@@ -45,9 +52,10 @@
     }
 
     .router-view {
-        /*position: absolute;*/
+        position: absolute;
         width: 100%;
         height: 100%;
+        top: 0;
         transition: all .5s cubic-bezier(.55, 0, .1, 1);
     }
 
@@ -56,7 +64,7 @@
     .vux-pop-in-enter-active,
     .vux-pop-in-leave-active {
         will-change: transform;
-        transition: all 500ms;
+        transition: all 400ms;
         height: 100%;
         position: absolute;
         backface-visibility: hidden;
