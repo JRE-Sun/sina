@@ -1,7 +1,7 @@
 <template>
     <div>
         <header-tpl></header-tpl>
-        <tab active-color='#fc378c' v-model="headerSelectIndex">
+        <tab active-color='#fc378c' v-model="headerSelectIndex.headerSelectIndex">
             <tab-item v-for="(item,index) in headerList" v-bind:key="index" @on-item-click="onItemClick">{{ item }}
             </tab-item>
         </tab>
@@ -10,7 +10,7 @@
                 <p>llll</p>
             </div>
         </router-link>
-        <swiper v-model="headerSelectIndex" :show-dots="false" height="575px">
+        <swiper v-model="headerSelectIndex.headerSelectIndex" :show-dots="false" height="575px">
             <swiper-item class="swiper-demo-img" v-for="index in headerList.length" v-bind:key="index">
                 <time-line v-for="(item,index) in dataList[headerSelectIndex]" v-bind:key="index"></time-line>
             </swiper-item>
@@ -32,7 +32,13 @@
                 headerList  : ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻'],
             }
         },
-        computed  : mapState(['dataList', 'api', 'headerSelectIndex']),
+        computed  : {
+            ...mapState({
+                dataList         : state => state.dataList,
+                api              : state => state.api,
+                headerSelectIndex: state => state,
+            }),
+        },
         components: {
             headerTpl,
             timeLine,
