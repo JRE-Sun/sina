@@ -1,55 +1,85 @@
 <template>
-    <transition :name="transitionName">
-        <router-view class="child-view"></router-view>
-    </transition>
+    <div id="app">
+        <transition :name="transitionName">
+            <router-view class="router-view"></router-view>
+        </transition>
+    </div>
 </template>
 
 <script>
     export default {
-        name: 'App',
+        name   : 'App',
         data() {
             return {
-                transitionName: 'slide-left'
+                isShow        : false,
+                transitionName: 'vux-pop-in'
             }
         },
         beforeRouteUpdate(to, from, next) {
             let isBack = this.$router.isBack
             if (isBack) {
-                this.transitionName = 'slide-right'
+                this.transitionName = 'vux-pop-out'
                 console.log(1);
             } else {
-                this.transitionName = 'slide-left'
+                this.transitionName = 'vux-pop-in'
                 console.log(2);
             }
             this.$router.isBack = false
             next()
+        },
+        methods: {
+            aa() {
+                this.isShow         = !this.isShow;
+                this.transitionName = this.transitionName == 'vux-pop-in' ? 'vux-pop-out' :
+                    'vux-pop-in';
+            }
         }
     }
 </script>
 
 <style>
-    .child-view {
-        position: absolute;
+    html, body {
         width: 100%;
-        transition: all .8s cubic-bezier(.55, 0, .1, 1);
+        height: 100%;
+        position: relative;
     }
 
-    .slide-left-enter, .slide-right-leave-active {
-        opacity: 0;
-        -webkit-transform: translate(50px, 0);
-        transform: translate(50px, 0);
+    .router-view {
+        /*position: absolute;*/
+        width: 100%;
+        height: 100%;
+        transition: all .5s cubic-bezier(.55, 0, .1, 1);
     }
 
-    .slide-left-leave-active, .slide-right-enter {
-        opacity: 0;
-        -webkit-transform: translate(-50px, 0);
-        transform: translate(-50px, 0);
-    }
-
-    .header {
+    .vux-pop-out-enter-active,
+    .vux-pop-out-leave-active,
+    .vux-pop-in-enter-active,
+    .vux-pop-in-leave-active {
+        will-change: transform;
+        transition: all 500ms;
+        height: 100%;
         position: absolute;
-        height: 44px;
-        background: #0058F1;
-        width: 100%
+        backface-visibility: hidden;
+        perspective: 1000;
+    }
+
+    .vux-pop-out-enter {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    .vux-pop-out-leave-active {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    .vux-pop-in-enter {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    .vux-pop-in-leave-active {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
     }
 </style>
