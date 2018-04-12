@@ -23,11 +23,14 @@
     import {mapState, mapMutations} from 'vuex';
     import {Swiper, SwiperItem, Tab, TabItem, Loading} from 'vux'
     import BottomLoad from '../assets/js/bottom-load'
+    import API from '../assets/js/API'
 
     export default {
         name      : 'home',
         data() {
             return {
+                page        : [],
+                type        : 0,
                 isAjax      : true,
                 swiperHeight: 0,
                 headerList  : ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻'],
@@ -60,22 +63,37 @@
             onItemClick: function (index) {
                 let self = this;
                 self.setHeaderSelectIndex(index);
-                self.isAjax = true;
-                this.$axios.get(this.api + 'News/new_list?type=' + index + '&page=10').then(function (res) {
-                    setTimeout(function () {
-                        self.setTimeLine({
-                            index: index,
-                            data : res.data.data
-                        });
-                        self.isAjax = false;
-                    }, 400);
-                }).catch(function () {
-
-                });
+                self.getDataFromAjax(self.getPageIndex(index) + 1, self.type);
             },
             swiperChange(index) {
                 this.onItemClick(index);
             },
+            /**
+             * 获取ajax数据
+             * @param page
+             * @param type
+             */
+            getDataFromAjax(page, type) {
+                let self    = this;
+                self.isAjax = true;
+                API.get(`News/new_list?type=${type}&page=${page * 5}`, (res) => {
+                    setTimeout(function () {
+                        self.setTimeLine({
+                            index: type,
+                            data : res.data.data
+                        });
+                        self.isAjax     = false;
+                        self.page[type] = page;
+                    }, 400);
+                });
+            },
+            getPageIndex(index = this.type) {
+                console.log(index);
+                // if (typeof self.page[index] == 'undefined') {
+                    self.page[index] = 0;
+                // }
+                return this.page[index];
+            }
         },
         created() {
             let self = this;
@@ -85,42 +103,25 @@
             let screenHeight  = window.innerHeight;
             // 获取顶部header和nav的高
             self.swiperHeight = screenHeight - 46 - 44 - 2;
-            this.$axios.get(this.api + 'News/new_list?type=0&page=10').then(function (res) {
-                setTimeout(function () {
-                    self.setTimeLine({
-                        index: 0,
-                        data : res.data.data
-                    });
-                    self.isAjax = false;
-                }, 400);
-            });
+            this.getDataFromAjax(self.getPageIndex() + 1, self.type);
         },
         mounted() {
             document.querySelector('.vux-swiper').addEventListener('scroll', (e) => {
                 // 存储list的top
                 this.setHomeScrollTop(e.srcElement.scrollTop);
             });
-            let self = this;
+            let self    = this;
             let options = {
                 ele            : '.vux-swiper',
                 eleClientHeight: '.time-line-wrap',
-                screenHeight   : this.swiperHeight,
+                screenHeight   : self.swiperHeight,
                 callback() {
                     console.log('到达底部');
                     if (self.isAjax) {
                         return;
                     }
                     // 加载下一页数据
-                    self.isAjax = true;
-                    self.$axios.get(self.api + 'News/new_list?type=0&page=10').then(function (res) {
-                        setTimeout(function () {
-                            self.setTimeLine({
-                                index: 0,
-                                data : res.data.data
-                            });
-                            self.isAjax = false;
-                        }, 400);
-                    });
+                    self.getDataFromAjax(self.getPageIndex() + 1, self.type);
                 }
             };
             new BottomLoad(options);
