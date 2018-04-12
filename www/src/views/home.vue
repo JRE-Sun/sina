@@ -7,9 +7,11 @@
         </tab>
         <loading :show="isAjax"></loading>
         <swiper @on-index-change="swiperChange" v-model="headerSelectIndex.headerSelectIndex" :show-dots="false"
-                height="575px">
+                :height="swiperHeight+'px'">
             <swiper-item class="swiper-demo-img" v-for="(item,index) in headerList.length" v-bind:key="index">
-                <time-line :list-item="item" v-for="(item,index) in dataList[index]" v-bind:key="index"></time-line>
+                <div class="time-line-wrap">
+                    <time-line :list-item="item" v-for="(item,index) in dataList[index]" v-bind:key="index"></time-line>
+                </div>
             </swiper-item>
         </swiper>
     </div>
@@ -81,7 +83,7 @@
             // 获取屏幕的高,设置下面swiper高度
             let screenHeight  = window.innerHeight;
             // 获取顶部header和nav的高
-            self.swiperHeight = screenHeight - 46 - 44 - 2 + 'px';
+            self.swiperHeight = screenHeight - 46 - 44 - 2;
             this.$axios.get(this.api + 'News/new_list?type=0&page=10').then(function (res) {
                 setTimeout(function () {
                     self.setTimeLine({
@@ -90,15 +92,33 @@
                     });
                     self.isAjax = false;
                 }, 400);
-            }).catch(function () {
             });
         },
         mounted() {
             let swiperItem = document.querySelectorAll('.vux-swiper');
+            let self       = this;
             for (let i = 0; i < swiperItem.length; i++) {
                 swiperItem[i].addEventListener('scroll', (e) => {
-                    console.log(e.srcElement.scrollTop);
+                    // 存储list的top
                     this.setHomeScrollTop(e.srcElement.scrollTop);
+                    console.log(e.srcElement.scrollTop);
+                    // swiper总长度 = 屏幕高 + 滚上去的高度
+                    if (document.querySelector('.time-line-wrap').clientHeight - 200 <= this.swiperHeight + e.srcElement.scrollTop) {
+                        if (self.isAjax) {      
+                            return;
+                        }
+                        // 加载下一页数据
+                        self.isAjax = true;
+                        this.$axios.get(this.api + 'News/new_list?type=0&page=10').then(function (res) {
+                            setTimeout(function () {
+                                self.setTimeLine({
+                                    index: 0,
+                                    data : res.data.data
+                                });
+                                self.isAjax = false;
+                            }, 400);
+                        });
+                    }
                 });
             }
         },
