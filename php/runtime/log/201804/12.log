@@ -8773,3 +8773,1830 @@
 )
 [ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:22:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：12.298339s][吞吐率：0.08req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:22:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：8.567246s][吞吐率：0.12req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:22:44+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.246166s][吞吐率：4.06req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:22:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.245859s][吞吐率：4.07req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:22:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.108519s][吞吐率：9.21req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=10 [运行时间：0.279049s][吞吐率：3.58req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=10 [运行时间：0.262653s][吞吐率：3.81req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.096051s][吞吐率：10.41req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.640935s][吞吐率：1.56req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.098131s][吞吐率：10.19req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.100404s][吞吐率：9.96req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.125379s][吞吐率：7.98req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:23:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.274099s][吞吐率：3.65req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:24:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.172722s][吞吐率：5.79req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:24:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.126520s][吞吐率：7.90req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:24:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.201606s][吞吐率：4.96req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.185594s][吞吐率：5.39req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=5 [运行时间：0.256515s][吞吐率：3.90req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.213940s][吞吐率：4.67req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:30+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=5 [运行时间：0.837151s][吞吐率：1.19req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=5 [运行时间：0.179870s][吞吐率：5.56req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=5 [运行时间：0.245142s][吞吐率：4.08req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=5 [运行时间：0.163120s][吞吐率：6.13req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=3&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=3&page=5 [运行时间：0.252676s][吞吐率：3.96req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '3',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=3&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=3&page=5 [运行时间：0.239809s][吞吐率：4.17req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '3',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=10 [运行时间：0.178292s][吞吐率：5.61req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=10 [运行时间：0.173791s][吞吐率：5.75req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=10 [运行时间：0.209990s][吞吐率：4.76req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=10 [运行时间：0.313752s][吞吐率：3.19req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=10 [运行时间：0.319079s][吞吐率：3.13req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=10 [运行时间：0.107543s][吞吐率：9.30req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:44+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=15
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=15 [运行时间：0.421236s][吞吐率：2.37req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '15',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=15
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=15 [运行时间：0.407852s][吞吐率：2.45req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '15',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=7&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=7&page=5 [运行时间：0.781687s][吞吐率：1.28req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '7',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=7&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=7&page=5 [运行时间：0.595952s][吞吐率：1.68req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '7',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=5&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=5&page=5 [运行时间：0.248508s][吞吐率：4.02req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '5',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=5&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=5&page=5 [运行时间：0.197910s][吞吐率：5.05req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '5',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:26:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.174881s][吞吐率：5.72req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:27:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=5 [运行时间：0.210565s][吞吐率：4.75req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:27:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=5 [运行时间：0.130234s][吞吐率：7.68req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:27:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.308428s][吞吐率：3.24req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:27:27+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.106942s][吞吐率：9.35req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:27:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.194503s][吞吐率：5.14req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:27:39+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=4&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=4&page=5 [运行时间：0.441549s][吞吐率：2.26req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '4',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.662344s][吞吐率：1.51req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.363509s][吞吐率：2.75req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=5 [运行时间：0.181137s][吞吐率：5.52req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=5 [运行时间：0.214729s][吞吐率：4.66req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=10 [运行时间：0.262140s][吞吐率：3.81req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=15
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=15 [运行时间：0.228592s][吞吐率：4.37req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '15',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=20
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=20 [运行时间：0.719241s][吞吐率：1.39req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '20',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=25
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=25 [运行时间：0.324130s][吞吐率：3.09req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '25',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=30
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=30 [运行时间：0.984165s][吞吐率：1.02req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '30',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=2&page=35
+[ info ] www.php.cc/index.php/api/News/new_list?type=2&page=35 [运行时间：1.687806s][吞吐率：0.59req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'page' => '35',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:30:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=5 [运行时间：0.252213s][吞吐率：3.96req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:31:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=10
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=10 [运行时间：0.361935s][吞吐率：2.76req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '10',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:31:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=15
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=15 [运行时间：0.256384s][吞吐率：3.90req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '15',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:31:39+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=20
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=20 [运行时间：0.316185s][吞吐率：3.16req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '20',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:31:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=25
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=25 [运行时间：0.273735s][吞吐率：3.65req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '25',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:31:44+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=30
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=30 [运行时间：0.295268s][吞吐率：3.39req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '30',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:31:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=35
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=35 [运行时间：0.384083s][吞吐率：2.60req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '35',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:31:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=1&page=5
+[ info ] www.php.cc/index.php/api/News/new_list?type=1&page=5 [运行时间：0.274512s][吞吐率：3.64req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '5',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-12T18:35:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/api/News/new_list?type=0&page=40
+[ info ] www.php.cc/index.php/api/News/new_list?type=0&page=40 [运行时间：0.239827s][吞吐率：4.17req/s] [内存消耗：1,503.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\sina\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'News',
+    2 => 'new_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.php.cc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '40',
+)
+[ info ] [ RUN ] app\api\controller\News->new_list[ D:\web\sina\php\apps\api\controller\News.php ]
+[ info ] [ LOG ] INIT File

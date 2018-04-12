@@ -31,7 +31,7 @@
             return {
                 page        : [],
                 type        : 0,
-                isAjax      : true,
+                isAjax      : false,
                 swiperHeight: 0,
                 headerList  : ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻'],
             }
@@ -63,6 +63,7 @@
             onItemClick: function (index) {
                 let self = this;
                 self.setHeaderSelectIndex(index);
+                self.type = index;
                 self.getDataFromAjax(self.getPageIndex(index) + 1, self.type);
             },
             swiperChange(index) {
@@ -74,8 +75,12 @@
              * @param type
              */
             getDataFromAjax(page, type) {
-                let self    = this;
+                let self = this;
+                if (self.isAjax) {
+                    return;
+                }
                 self.isAjax = true;
+                console.log(page, type);
                 API.get(`News/new_list?type=${type}&page=${page * 5}`, (res) => {
                     setTimeout(function () {
                         self.setTimeLine({
@@ -88,17 +93,15 @@
                 });
             },
             getPageIndex(index = this.type) {
-                console.log(index);
-                // if (typeof self.page[index] == 'undefined') {
-                    self.page[index] = 0;
-                // }
+                if (typeof this.page[index] == 'undefined') {
+                    this.page[index] = 0;
+                }
                 return this.page[index];
             }
         },
         created() {
             let self = this;
             self.setHeaderTitle('首页');
-            self.isAjax       = true;
             // 获取屏幕的高,设置下面swiper高度
             let screenHeight  = window.innerHeight;
             // 获取顶部header和nav的高
@@ -117,9 +120,6 @@
                 screenHeight   : self.swiperHeight,
                 callback() {
                     console.log('到达底部');
-                    if (self.isAjax) {
-                        return;
-                    }
                     // 加载下一页数据
                     self.getDataFromAjax(self.getPageIndex() + 1, self.type);
                 }
