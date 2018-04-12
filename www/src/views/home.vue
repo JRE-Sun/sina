@@ -22,6 +22,7 @@
     import timeLine from './timeline/timeline';
     import {mapState, mapMutations} from 'vuex';
     import {Swiper, SwiperItem, Tab, TabItem, Loading} from 'vux'
+    import BottomLoad from '../assets/js/bottom-load'
 
     export default {
         name      : 'home',
@@ -95,32 +96,34 @@
             });
         },
         mounted() {
-            let swiperItem = document.querySelectorAll('.vux-swiper');
-            let self       = this;
-            for (let i = 0; i < swiperItem.length; i++) {
-                swiperItem[i].addEventListener('scroll', (e) => {
-                    // 存储list的top
-                    this.setHomeScrollTop(e.srcElement.scrollTop);
-                    console.log(e.srcElement.scrollTop);
-                    // swiper总长度 = 屏幕高 + 滚上去的高度
-                    if (document.querySelector('.time-line-wrap').clientHeight - 200 <= this.swiperHeight + e.srcElement.scrollTop) {
-                        if (self.isAjax) {
-                            return;
-                        }
-                        // 加载下一页数据
-                        self.isAjax = true;
-                        this.$axios.get(this.api + 'News/new_list?type=0&page=10').then(function (res) {
-                            setTimeout(function () {
-                                self.setTimeLine({
-                                    index: 0,
-                                    data : res.data.data
-                                });
-                                self.isAjax = false;
-                            }, 400);
-                        });
+            document.querySelector('.vux-swiper').addEventListener('scroll', (e) => {
+                // 存储list的top
+                this.setHomeScrollTop(e.srcElement.scrollTop);
+            });
+            let self = this;
+            let options = {
+                ele            : '.vux-swiper',
+                eleClientHeight: '.time-line-wrap',
+                screenHeight   : this.swiperHeight,
+                callback() {
+                    console.log('到达底部');
+                    if (self.isAjax) {
+                        return;
                     }
-                });
-            }
+                    // 加载下一页数据
+                    self.isAjax = true;
+                    self.$axios.get(self.api + 'News/new_list?type=0&page=10').then(function (res) {
+                        setTimeout(function () {
+                            self.setTimeLine({
+                                index: 0,
+                                data : res.data.data
+                            });
+                            self.isAjax = false;
+                        }, 400);
+                    });
+                }
+            };
+            new BottomLoad(options);
         },
         activated() {
             document.querySelector('.vux-swiper').scrollTop = this.homeScrollTop;
