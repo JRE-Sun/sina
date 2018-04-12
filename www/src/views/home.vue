@@ -35,6 +35,7 @@
                 dataList         : state => state.dataList,
                 api              : state => state.api,
                 headerSelectIndex: state => state,
+                homeScrollTop    : state => state.homeScrollTop,
             }),
         },
         components: {
@@ -50,7 +51,8 @@
             ...mapMutations([
                 'setTimeLine',
                 'setHeaderSelectIndex',
-                'setHeaderTitle'
+                'setHeaderTitle',
+                'setHomeScrollTop',
             ]),
             onItemClick: function (index) {
                 let self = this;
@@ -70,11 +72,11 @@
             },
             swiperChange(index) {
                 this.onItemClick(index);
-            }
+            },
         },
         created() {
-            let self          = this;
-            self.setHeaderTitle('首页页');
+            let self = this;
+            self.setHeaderTitle('首页');
             self.isAjax       = true;
             // 获取屏幕的高,设置下面swiper高度
             let screenHeight  = window.innerHeight;
@@ -90,6 +92,18 @@
                 }, 400);
             }).catch(function () {
             });
+        },
+        mounted() {
+            let swiperItem = document.querySelectorAll('.vux-swiper');
+            for (let i = 0; i < swiperItem.length; i++) {
+                swiperItem[i].addEventListener('scroll', (e) => {
+                    console.log(e.srcElement.scrollTop);
+                    this.setHomeScrollTop(e.srcElement.scrollTop);
+                });
+            }
+        },
+        activated() {
+            document.querySelector('.vux-swiper').scrollTop = this.homeScrollTop;
         }
     }
 </script>

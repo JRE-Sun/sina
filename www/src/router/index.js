@@ -11,7 +11,6 @@ Router.prototype.goBack = function () {
     this.isBack = true
     window.history.go(-1)
 }
-
 export default new Router({
     routes: [
         {
@@ -20,7 +19,10 @@ export default new Router({
             children : [
                 {
                     path     : '/',
-                    component: home,
+                    component: (resolve) => require(['../views/home'], resolve),
+                    meta     : {
+                        keepAlive: true // 需要被缓存
+                    }
                 },
                 {
                     path     : '/detail',

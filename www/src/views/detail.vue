@@ -37,7 +37,7 @@
                 this.$router.goBack();
             }
         },
-        created   : function () {
+        activated() {
             let self = this;
             self.setHeaderTitle('详情页');
             setTimeout(() => {
@@ -48,6 +48,9 @@
                 }).catch(function () {
                 });
             }, 400);
+        },
+        created   : function () {
+
         }
     }
 </script>

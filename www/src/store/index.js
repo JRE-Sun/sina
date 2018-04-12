@@ -13,6 +13,7 @@ const state = {
     dataList         : [], // 存放timeline里的数据
     headerSelectIndex: 0, // header导航
     headerTitle      : "",
+    homeScrollTop    : 0,
 }
 
 export default new Vuex.Store({

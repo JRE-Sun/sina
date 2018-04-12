@@ -26,5 +26,8 @@ export default {
      */
     setHeaderTitle(state, data) {
         state.headerTitle = data;
+    },
+    setHomeScrollTop(state, data) {
+        state.homeScrollTop = data;
     }
 }
