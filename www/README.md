@@ -1,23 +1,23 @@
-# www
+# 说明文档
+> 这里是日期
 
-> A Vue.js project
+搭建好开发环境,开始开发.
 
-## Build Setup
+# 遇到的问题
+1. 是
 
-``` bash
-# install dependencies
-npm install
+> 4月11
 
-# serve with hot reload at localhost:8080
-npm run dev
+完成vue路由的切换动画,类似app左右滑动那种
 
-# build for production with minification
-npm run build
+# 遇到的问题
+1. 如何实现app左右滑动切换效果
+2. 如何在vue下面监听,浏览器返回键的路由动画
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+> 4月12
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+完成在首页的底部加载、router的缓存
 
-* 添加底部自动加载
+# 遇到的问题
+1. 首页数据如何缓存,就是从详情页返回首页的时候留住首页数据,并且回到之前首页的浏览位置
+2. 

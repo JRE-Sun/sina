@@ -104,7 +104,7 @@
                     console.log(e.srcElement.scrollTop);
                     // swiper总长度 = 屏幕高 + 滚上去的高度
                     if (document.querySelector('.time-line-wrap').clientHeight - 200 <= this.swiperHeight + e.srcElement.scrollTop) {
-                        if (self.isAjax) {      
+                        if (self.isAjax) {
                             return;
                         }
                         // 加载下一页数据
