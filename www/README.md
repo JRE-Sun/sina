@@ -37,8 +37,16 @@
 * 优化滚到底部,出现正在加载loading
 * 优化首页,当加载失败,出现toast提示
 * 图片懒加载
+* 优化首页timeline点击样式
 > 未完成:
 * 添加回到顶部按钮
 
 **遇到的问题**
 1. 在首页添加了下拉加载功能,进入详情页的时候,这个首页的下啦加载还会继续存在,需要在生命周期的deactivated方法里面解除绑定
+2. 在移动端点击a标签会出现蓝色背景
+    ```
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+    ```

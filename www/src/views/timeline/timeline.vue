@@ -46,4 +46,9 @@
         line-height: 1.6;
         letter-spacing: .25px;
     }
+
+    .timeline:active {
+        background-color: #E4E4E4;
+        /*color: #FFF;*/
+    }
 </style>
