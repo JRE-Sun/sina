@@ -5,7 +5,6 @@
             <tab-item v-for="(item,index) in headerList" v-bind:key="index" @on-item-click="onItemClick">{{ item }}
             </tab-item>
         </tab>
-        <loading :show="isAjax"></loading>
         <div class="time-line-wrap">
             <time-line-joke v-if="type==8" :list-item="item" v-for="(item,index) in dataList[headerSelectIndex]"
                             v-bind:key="index"></time-line-joke>
@@ -13,6 +12,9 @@
                        v-bind:key="index"></time-line>
         </div>
         <load-more v-show="isLoadMore" tip="加载中..."></load-more>
+        <loading :show="isAjax"></loading>
+        <toast type="warn" :time="1000">加载失败,您可以尝试刷新一下页</toast>
+        <toast v-model="isShowToast" type="warn" :time="2000" text="加载失败,请刷新页面!"></toast>
     </div>
 </template>
 
@@ -21,7 +23,7 @@
     import timeLine from './timeline/timeline';
     import timeLineJoke from './timeline/timelint-joke';
     import {mapState, mapMutations} from 'vuex';
-    import {Tab, TabItem, Loading, AlertModule, LoadMore} from 'vux'
+    import {Tab, TabItem, Loading, AlertModule, LoadMore, Toast} from 'vux'
     import BottomLoad from '../assets/js/bottom-load'
     import API from '../assets/js/API'
 
@@ -34,6 +36,7 @@
                 type             : 0,
                 isLoadMore       : false,
                 isAjax           : false,
+                isShowToast      : false,
                 headerSelectIndex: 0,
                 headerList       :
                     ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻', '段子'],
@@ -55,6 +58,7 @@
             AlertModule,
             timeLineJoke,
             LoadMore,
+            Toast,
         },
         methods   : {
             ...mapMutations([
@@ -91,19 +95,19 @@
                     url = `/joke/index?page=${page}`;
                 }
                 console.log(page, type);
-                AlertModule.hide();
+                self.isShowToast = false;
                 API.get(url, (res) => {
                     setTimeout(function () {
                         if (res.data.data == null) {
-                            AlertModule.show({
-                                title  : '加载失败',
-                                content: '您可以尝试刷新一下页面!',
-                            })
+                            self.isShowToast = true;
+                            self[ajaxStatus] = false;
+                            return;
                         }
                         self.setTimeLine({
                             index: type,
                             data : res.data.data
                         });
+                        self.isShowToast = false;
                         self[ajaxStatus] = false;
                         self.page[type]  = page;
                     }, 400);
