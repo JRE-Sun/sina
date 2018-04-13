@@ -16,9 +16,6 @@ export default {
             });
         }
     },
-    setHeaderSelectIndex(state, data) {
-        state.headerSelectIndex = data;
-    },
     /**
      *
      * @param state
@@ -28,6 +25,11 @@ export default {
         state.headerTitle = data;
     },
     setHomeScrollTop(state, data) {
-        state.homeScrollTop = data;
+        const index     = data.index;
+        const scrollTop = data.scrollTop;
+        if (typeof state.homeScrollTop[index] == 'undefined') {
+            Vue.set(state.homeScrollTop, index, 0)
+        }
+        state.homeScrollTop[index] = scrollTop;
     }
 }

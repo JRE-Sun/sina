@@ -6,29 +6,20 @@
             <p class="desc">{{ listItem.desc }}</p>
         </div>
     </router-link>
-    <!--<panel  type="1" :list="dataList[headerSelectIndex]"></panel>-->
-    <!--<p v-for="item in dataList">{{ item.ltitle }}</p>-->
 </template>
 <script>
-    import {mapState, mapMutations} from 'vuex';
-    import {Panel} from 'vux'
-
     export default {
-        name      : 'timeLine',
-        props     : ['listItem'],
+        name    : 'timeLine',
+        props   : ['listItem'],
         data() {
             return {}
         },
-        components: {
-            Panel
-        },
-        computed  : {
-            ...mapState(['dataList', 'headerSelectIndex']),
+        computed: {
             key() {
                 return (new Date()).valueOf()
             }
         },
-        mounted   : function () {
+        created(){
 
         }
     }

@@ -8,12 +8,11 @@ Vue.use(Vuex)
 
 // 用来存放数据,或者状态
 const state = {
-    api              : 'http://www.php.cc/index.php/api/',
-    userName         : true, // 用来存储判断视乎是否已经登陆
-    dataList         : [], // 存放timeline里的数据
-    headerSelectIndex: 0, // header导航
-    headerTitle      : "",
-    homeScrollTop    : 0,
+    api          : 'http://www.php.cc/index.php/api/',
+    userName     : true, // 用来存储判断视乎是否已经登陆
+    dataList     : [], // 存放timeline里的数据
+    headerTitle  : "",
+    homeScrollTop: [0],
 }
 
 export default new Vuex.Store({
