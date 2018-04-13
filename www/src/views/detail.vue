@@ -8,7 +8,6 @@
     </div>
 </template>
 
-
 <script>
     import headerTpl from './header/header';
     import {mapState, mapMutations} from 'vuex';

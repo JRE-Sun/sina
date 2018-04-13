@@ -81,7 +81,15 @@
                 document.querySelector('body').scrollTop = self.homeScrollTop[this.type];
                 // 只有首次切换类目,该类目才加载数据.
                 if (page == 1) {
-                    self.getDataFromAjax(self.getPageIndex(index) + 1, self.type);
+                    self.getDataFromAjax(self.getPageIndex(index) + 1, self.type, () => {
+                        let timer = setInterval(() => {
+                            if (self.activePage < 1) {
+                                return;
+                            }
+                            clearInterval(timer);
+                            self.lazyLoadObject.reset();
+                        }, 1);
+                    });
                 }
             },
             /**
@@ -89,7 +97,7 @@
              * @param page
              * @param type
              */
-            getDataFromAjax(page, type) {
+            getDataFromAjax(page, type, callback) {
                 let self = this;
                 if (self.isAjax || self.isLoadMore) {
                     return;
@@ -118,6 +126,7 @@
                         self[ajaxStatus] = false;
                         self.page[type]  = page;
                         self.activePage  = page;
+                        typeof callback == 'function' && callback();
                     }, 400);
                 });
             },

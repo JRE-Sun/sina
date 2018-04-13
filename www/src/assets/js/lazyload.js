@@ -24,6 +24,11 @@ class LazyLoad {
         this.addEvent();
     }
 
+    reset() {
+        this.imgArray = document.querySelectorAll(this.installSelector);
+        this.autoLoad();
+    }
+
     addEvent() {
         document.querySelector(this.scroller).addEventListener('scroll', this.loadHandler, false);
     }
@@ -31,8 +36,10 @@ class LazyLoad {
     autoLoad() {
         let imgArray  = this.imgArray;
         let imgLength = imgArray.length;
+        console.log(imgArray,imgLength);
         for (let i = 0; i < imgLength; i++) {
             let selfImg = imgArray[i];
+            console.log(456787654);
             if (selfImg.tagName.toLocaleLowerCase() != 'img') {
                 return;
             }
