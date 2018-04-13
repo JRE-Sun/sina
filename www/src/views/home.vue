@@ -17,7 +17,7 @@
     import headerTpl from './header/header';
     import timeLine from './timeline/timeline';
     import {mapState, mapMutations} from 'vuex';
-    import {Tab, TabItem, Loading} from 'vux'
+    import {Tab, TabItem, Loading, AlertModule} from 'vux'
     import BottomLoad from '../assets/js/bottom-load'
     import API from '../assets/js/API'
 
@@ -45,7 +45,8 @@
             timeLine,
             Tab,
             TabItem,
-            Loading
+            Loading,
+            AlertModule
         },
         methods   : {
             ...mapMutations([
@@ -57,8 +58,9 @@
                 let self  = this;
                 self.type = index;
                 let page  = self.getPageIndex(index) + 1;
+
                 // 切换类目后,需要把body切换到之前浏览该类目的位置
-                document.querySelector('body').scrollTop = 0;
+                document.querySelector('body').scrollTop = self.homeScrollTop[this.type];
                 // 只有首次切换类目,该类目才加载数据.
                 if (page == 1) {
                     self.getDataFromAjax(self.getPageIndex(index) + 1, self.type);
@@ -76,8 +78,15 @@
                 }
                 self.isAjax = true;
                 console.log(page, type);
+                AlertModule.hide();
                 API.get(`News/new_list?type=${type}&page=${page * 5}`, (res) => {
                     setTimeout(function () {
+                        if (res.data.data == null) {
+                            AlertModule.show({
+                                title  : '加载失败',
+                                content: '您可以尝试刷新一下页面!',
+                            })
+                        }
                         self.setTimeLine({
                             index: type,
                             data : res.data.data

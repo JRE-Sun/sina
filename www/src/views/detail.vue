@@ -40,14 +40,11 @@
             setTimeout(() => {
                 self.isAjax = true;
                 self.$axios.get(self.api + 'News/new_detail?postid=' + self.$route.params.detailId).then(function (res) {
-                    console.log();
                     if (!res.data.data) {
                         self.$router.push({name: 'home'})
                     }
-
                     self.data   = res.data.data;
                     self.isAjax = false;
-                    console.log(res.data.data);
                 });
             }, 400);
         },
