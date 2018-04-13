@@ -56,7 +56,13 @@
             onItemClick: function (index) {
                 let self  = this;
                 self.type = index;
-                self.getDataFromAjax(self.getPageIndex(index) + 1, self.type);
+                let page  = self.getPageIndex(index) + 1;
+                // 切换类目后,需要把body切换到之前浏览该类目的位置
+                document.querySelector('body').scrollTop = 0;
+                // 只有首次切换类目,该类目才加载数据.
+                if (page == 1) {
+                    self.getDataFromAjax(self.getPageIndex(index) + 1, self.type);
+                }
             },
             /**
              * 获取ajax数据
