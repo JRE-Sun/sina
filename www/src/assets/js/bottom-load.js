@@ -39,7 +39,10 @@ class BottomLoad {
             return;
         }
         if (self.isScrolling) {
-            self.isScrolling(e);
+            self.isScrolling({
+                screenHeight: self.screenHeight,
+                scrollTop   : e.srcElement.scrollTop,
+            });
         }
         // 总得高 = 屏幕上的高 + 滚动的高
         if (self.callback && (document.querySelector(self.eleClientHeight).clientHeight - self.toBottom <= self.screenHeight +

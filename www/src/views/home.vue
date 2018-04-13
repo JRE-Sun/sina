@@ -15,7 +15,7 @@
         <loading :show="isAjax"></loading>
         <toast type="warn" :time="1000">加载失败,您可以尝试刷新一下页</toast>
         <toast v-model="isShowToast" type="warn" :time="2000" text="加载失败,请刷新页面!"></toast>
-        <scroll-to-top></scroll-to-top>
+        <scroll-to-top :is-show-to-top="isShowToTop"></scroll-to-top>
     </div>
 </template>
 
@@ -42,6 +42,7 @@
                 isLoadMore       : false,
                 isAjax           : false,
                 isShowToast      : false,
+                isShowToTop      : false,
                 headerSelectIndex: 0,
                 headerList       :
                     ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻', '段子'],
@@ -143,11 +144,13 @@
             let self    = this;
             let options = {
                 eleClientHeight: '.time-line-wrap',
-                isScrolling(e) {
+                isScrolling({screenHeight, scrollTop} = {}) {
+                    // 向下滚动超过一瓶,出现回到顶部按钮
+                    self.isShowToTop = scrollTop > screenHeight ? true : false;
                     // 存储list的top
                     self.setHomeScrollTop({
                         index    : self.type,
-                        scrollTop: e.srcElement.scrollTop
+                        scrollTop: scrollTop
                     });
                 },
                 callback() {

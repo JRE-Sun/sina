@@ -1,5 +1,5 @@
 <template>
-    <div class="scroll-to-top" v-on:click="clickScrollToTop">
+    <div v-show="isShowToTop" class="scroll-to-top" v-on:click="clickScrollToTop">
         <icon class="icon-up" name="up"></icon>
     </div>
 </template>
@@ -7,11 +7,12 @@
 <script>
     export default {
         name   : 'scrollToTop',
+        props  : ['isShowToTop'],
         methods: {
             clickScrollToTop() {
                 document.querySelector('body').scrollTop = 0;
-            }
-        }
+            },
+        },
     }
 </script>
 
