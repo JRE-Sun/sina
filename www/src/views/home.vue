@@ -117,6 +117,7 @@
                     self.getDataFromAjax(self.getPageIndex() + 1, self.type);
                 }
             };
+            self.setHeaderTitle('首页');
             console.log('上次的位置', this.homeScrollTop[this.type]);
             self.bottomLoadObject                    = new BottomLoad(options);
             document.querySelector('body').scrollTop = this.homeScrollTop[this.type];

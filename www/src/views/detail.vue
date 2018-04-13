@@ -1,8 +1,8 @@
 <template>
     <div>
-        <header-tpl></header-tpl>
+        <header-tpl :showBack="true"></header-tpl>
         <loading :show="isAjax"></loading>
-        <div style="width: 100%;margin-top:50px;" v-on:click="go">
+        <div style="width: 100%;margin-top:50px;">
             <div v-html="data.body"></div>
         </div>
     </div>
@@ -15,7 +15,7 @@
     import {Loading} from 'vux';
 
     export default {
-        name      : 'home',
+        name      : 'detail',
         data() {
             return {
                 isAjax: true,
@@ -33,22 +33,22 @@
             ...mapMutations([
                 'setHeaderTitle'
             ]),
-            go: function () {
-                this.$router.goBack();
-            }
         },
         activated() {
             let self = this;
             self.setHeaderTitle('详情页');
             setTimeout(() => {
+                self.isAjax = true;
                 self.$axios.get(self.api + 'News/new_detail?postid=' + self.$route.params.detailId).then(function (res) {
                     self.data   = res.data.data;
                     self.isAjax = false;
                     console.log(res.data.data);
-                }).catch(function () {
                 });
             }, 400);
         },
+        deactivated() {
+            this.data = {};
+        }
     }
 </script>
 
