@@ -38,8 +38,9 @@
 * 优化首页,当加载失败,出现toast提示
 * 图片懒加载
 * 优化首页timeline点击样式
+* 添加回到顶部按钮(采用svg图标)
 > 未完成:
-* 添加回到顶部按钮
+* 无
 
 **遇到的问题**
 1. 在首页添加了下拉加载功能,进入详情页的时候,这个首页的下啦加载还会继续存在,需要在生命周期的deactivated方法里面解除绑定
@@ -50,3 +51,6 @@
     -moz-user-focus: none;
     -moz-user-select: none;
     ```
+3. vue项目如何按需加载svg图标
+    * 去github上下载vue-svg-icon组件,能够实现svg的按需加载
+    * 按照vue-svg-icon的说明文档可能会出错误,是因为需要安装以来`npm install xml-loader`

@@ -15,6 +15,7 @@
         <loading :show="isAjax"></loading>
         <toast type="warn" :time="1000">加载失败,您可以尝试刷新一下页</toast>
         <toast v-model="isShowToast" type="warn" :time="2000" text="加载失败,请刷新页面!"></toast>
+        <scroll-to-top></scroll-to-top>
     </div>
 </template>
 
@@ -27,6 +28,7 @@
     import BottomLoad from '../assets/js/bottom-load'
     import LazyLoad from '../assets/js/lazyload'
     import API from '../assets/js/API'
+    import scrollToTop from '../components/scrollToTop'
 
     export default {
         name      : 'home',
@@ -62,6 +64,7 @@
             timeLineJoke,
             LoadMore,
             Toast,
+            scrollToTop,
         },
         methods   : {
             ...mapMutations([

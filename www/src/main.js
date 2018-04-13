@@ -12,6 +12,10 @@ import style from './assets/css/style.css';
 
 Vue.config.productionTip = false
 
+import Icon from 'vue-svg-icon/Icon.vue';
+
+Vue.component('icon', Icon);
+
 /* eslint-disable no-new */
 new Vue({
     el        : '#app',
