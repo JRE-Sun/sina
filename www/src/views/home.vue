@@ -12,6 +12,7 @@
             <time-line v-if="type!=8" :list-item="item" v-for="(item,index) in dataList[headerSelectIndex]"
                        v-bind:key="index"></time-line>
         </div>
+        <load-more v-show="isLoadMore" tip="加载中..."></load-more>
     </div>
 </template>
 
@@ -20,7 +21,7 @@
     import timeLine from './timeline/timeline';
     import timeLineJoke from './timeline/timelint-joke';
     import {mapState, mapMutations} from 'vuex';
-    import {Tab, TabItem, Loading, AlertModule} from 'vux'
+    import {Tab, TabItem, Loading, AlertModule, LoadMore} from 'vux'
     import BottomLoad from '../assets/js/bottom-load'
     import API from '../assets/js/API'
 
@@ -31,9 +32,11 @@
                 bottomLoadObject : '',
                 page             : [],
                 type             : 0,
+                isLoadMore       : false,
                 isAjax           : false,
                 headerSelectIndex: 0,
-                headerList       : ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻', '段子'],
+                headerList       :
+                    ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻', '段子'],
             }
         },
         computed  : {
@@ -51,6 +54,7 @@
             Loading,
             AlertModule,
             timeLineJoke,
+            LoadMore,
         },
         methods   : {
             ...mapMutations([
@@ -59,10 +63,9 @@
                 'setHomeScrollTop',
             ]),
             onItemClick: function (index) {
-                let self  = this;
-                self.type = index;
-                let page  = self.getPageIndex(index) + 1;
-
+                let self                                 = this;
+                self.type                                = index;
+                let page                                 = self.getPageIndex(index) + 1;
                 // 切换类目后,需要把body切换到之前浏览该类目的位置
                 document.querySelector('body').scrollTop = self.homeScrollTop[this.type];
                 // 只有首次切换类目,该类目才加载数据.
@@ -77,11 +80,13 @@
              */
             getDataFromAjax(page, type) {
                 let self = this;
-                if (self.isAjax) {
+                if (self.isAjax || self.isLoadMore) {
                     return;
                 }
-                self.isAjax = true;
-                let url     = `News/new_list?type=${type}&page=${page * 5}`;
+                // 当前页面是否初始化过了
+                let ajaxStatus   = page > 1 ? 'isLoadMore' : 'isAjax';
+                self[ajaxStatus] = true;
+                let url          = `News/new_list?type=${type}&page=${page * 5}`;
                 if (type == 8) {
                     url = `/joke/index?page=${page}`;
                 }
@@ -99,8 +104,8 @@
                             index: type,
                             data : res.data.data
                         });
-                        self.isAjax     = false;
-                        self.page[type] = page;
+                        self[ajaxStatus] = false;
+                        self.page[type]  = page;
                     }, 400);
                 });
             },
