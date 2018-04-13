@@ -1,5 +1,15 @@
 var self;
 
+/**
+ * vue滑动到底部自动加载
+ *
+ * ele:滚动的元素                          必填
+ * isScrolling:在滑动过程中触发的方法       (选)
+ * callback:滑动到底部,会触发              (选)
+ * toBottom:还差多少px到达底部             (选)默认200px
+ * eleClientHeight:元素滚动的总高度        (选)默认body高度
+ * screenHeight:屏幕的高                  (选)默认窗口可视区高
+ */
 class BottomLoad {
     constructor({ele = 'body', callback, toBottom = 200, isScrolling, eleClientHeight = 'body', screenHeight = window.innerHeight} = {}) {
         self                 = this;
