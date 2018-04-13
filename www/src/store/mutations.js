@@ -9,10 +9,12 @@ export default {
         }
         for (const i in dataList) {
             state.dataList[index].push({
-                src  : dataList[i].imgsrc,
-                title: dataList[i].title,
-                desc : dataList[i].digest,
-                url  : dataList[i].postid,
+                src    : dataList[i].imgsrc,
+                title  : dataList[i].title,
+                desc   : dataList[i].digest,
+                url    : dataList[i].postid,
+                content: dataList[i].digest,
+                source : dataList[i].source
             });
         }
     },

@@ -7,7 +7,9 @@
         </tab>
         <loading :show="isAjax"></loading>
         <div class="time-line-wrap">
-            <time-line :list-item="item" v-for="(item,index) in dataList[headerSelectIndex]"
+            <time-line-joke v-if="type==8" :list-item="item" v-for="(item,index) in dataList[headerSelectIndex]"
+                            v-bind:key="index"></time-line-joke>
+            <time-line v-if="type!=8" :list-item="item" v-for="(item,index) in dataList[headerSelectIndex]"
                        v-bind:key="index"></time-line>
         </div>
     </div>
@@ -16,6 +18,7 @@
 <script>
     import headerTpl from './header/header';
     import timeLine from './timeline/timeline';
+    import timeLineJoke from './timeline/timelint-joke';
     import {mapState, mapMutations} from 'vuex';
     import {Tab, TabItem, Loading, AlertModule} from 'vux'
     import BottomLoad from '../assets/js/bottom-load'
@@ -30,7 +33,7 @@
                 type             : 0,
                 isAjax           : false,
                 headerSelectIndex: 0,
-                headerList       : ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻'],
+                headerList       : ['头条', '军事', '娱乐', '体育', '科技', '艺术', '教育', '要闻', '段子'],
             }
         },
         computed  : {
@@ -46,7 +49,8 @@
             Tab,
             TabItem,
             Loading,
-            AlertModule
+            AlertModule,
+            timeLineJoke,
         },
         methods   : {
             ...mapMutations([
@@ -77,9 +81,13 @@
                     return;
                 }
                 self.isAjax = true;
+                let url     = `News/new_list?type=${type}&page=${page * 5}`;
+                if (type == 8) {
+                    url = `/joke/index?page=${page}`;
+                }
                 console.log(page, type);
                 AlertModule.hide();
-                API.get(`News/new_list?type=${type}&page=${page * 5}`, (res) => {
+                API.get(url, (res) => {
                     setTimeout(function () {
                         if (res.data.data == null) {
                             AlertModule.show({
@@ -102,7 +110,6 @@
                 }
                 return this.page[index];
             },
-
         },
         created() {
             let self = this;
@@ -141,4 +148,7 @@
 </script>
 
 <style>
+    .time-line-wrap {
+        margin-top: 90px;
+    }
 </style>

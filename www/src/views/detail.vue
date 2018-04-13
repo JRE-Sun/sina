@@ -2,7 +2,7 @@
     <div>
         <header-tpl :showBack="true"></header-tpl>
         <loading :show="isAjax"></loading>
-        <div style="width: 100%;margin-top:50px;">
+        <div class="detail-content">
             <div v-html="data.body"></div>
         </div>
     </div>
@@ -59,5 +59,15 @@
         background-color: #F9F9F9;
         width: 100%;
         height: 100%;
+    }
+
+    .detail-content {
+        width: 100%;
+        margin-top: 50px;
+        box-sizing: border-box;
+        padding: 0 10px 10px;
+        letter-spacing: .25px;
+        line-height: 1.6;
+        word-break: break-all;
     }
 </style>
