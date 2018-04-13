@@ -25,6 +25,7 @@
     import {mapState, mapMutations} from 'vuex';
     import {Tab, TabItem, Loading, AlertModule, LoadMore, Toast} from 'vux'
     import BottomLoad from '../assets/js/bottom-load'
+    import LazyLoad from '../assets/js/lazyload'
     import API from '../assets/js/API'
 
     export default {
@@ -32,8 +33,10 @@
         data() {
             return {
                 bottomLoadObject : '',
+                lazyLoadObject   : '',
                 page             : [],
                 type             : 0,
+                activePage       : 0,
                 isLoadMore       : false,
                 isAjax           : false,
                 isShowToast      : false,
@@ -110,6 +113,7 @@
                         self.isShowToast = false;
                         self[ajaxStatus] = false;
                         self.page[type]  = page;
+                        self.activePage  = page;
                     }, 400);
                 });
             },
@@ -130,6 +134,7 @@
                 document.querySelector('body').scrollTop = 0;
             }, 200);
             this.bottomLoadObject.remove();
+            this.lazyLoadObject.remove();
         },
         activated() {
             let self    = this;
@@ -150,7 +155,19 @@
             };
             self.setHeaderTitle('首页');
             console.log('上次的位置', this.homeScrollTop[this.type]);
-            self.bottomLoadObject                    = new BottomLoad(options);
+            self.bottomLoadObject = new BottomLoad(options);
+
+            let timer = setInterval(() => {
+                if (self.activePage < 1) {
+                    return;
+                }
+                clearInterval(timer);
+                self.lazyLoadObject = new LazyLoad({
+                    eleClientHeight: '.time-line-wrap',
+                    selector       : 'data-src'
+                });
+            }, 1);
+
             document.querySelector('body').scrollTop = this.homeScrollTop[this.type];
         }
     }

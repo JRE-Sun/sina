@@ -1,6 +1,6 @@
 <template>
     <router-link class="timeline" :to="{name:'detail',params:{'detailId':listItem.url},query: {key:key}}">
-        <img :src="listItem.src" alt="">
+        <img :data-src="listItem.src" alt="">
         <div class="right-content">
             <h4 class="title">{{ listItem.title }}</h4>
         </div>
