@@ -1,8 +1,7 @@
 <template>
     <div>
-        <header-tpl class="content-width"></header-tpl>
-        <tab style="position:fixed;top:46px;left:0;right:0;width:100%;" active-color='#fc378c'
-             v-model="headerSelectIndex" class="content-width">
+        <tab style="left:0;right:0;width:100%;" :style="navTabFixed" active-color='#fc378c'
+             v-model="headerSelectIndex" class="nav-tab content-width">
             <tab-item v-for="(item,index) in headerList" v-bind:key="index" @on-item-click="onItemClick">{{ item }}
             </tab-item>
         </tab>
@@ -43,6 +42,10 @@
                 isLoadMore       : false,
                 isAjax           : false,
                 isShowToast      : false,
+                navTabFixed      : {
+                    top     : '46px',
+                    position: 'absolute',
+                },
                 isShowToTop      : false,
                 headerSelectIndex: 0,
                 headerList       :
@@ -75,11 +78,11 @@
                 'setHomeScrollTop',
             ]),
             onItemClick: function (index) {
-                let self                                 = this;
-                self.type                                = index;
-                let page                                 = self.getPageIndex(index) + 1;
+                let self                                      = this;
+                self.type                                     = index;
+                let page                                      = self.getPageIndex(index) + 1;
                 // 切换类目后,需要把body切换到之前浏览该类目的位置
-                document.querySelector('body').scrollTop = self.homeScrollTop[this.type];
+                document.querySelector('body,html').scrollTop = self.homeScrollTop[this.type];
                 // 只有首次切换类目,该类目才加载数据.
                 if (page == 1) {
                     self.getDataFromAjax(self.getPageIndex(index) + 1, self.type, () => {
@@ -145,7 +148,7 @@
         },
         deactivated() {
             setTimeout(() => {
-                document.querySelector('body').scrollTop = 0;
+                document.querySelector('body,html').scrollTop = 0;
             }, 200);
             this.bottomLoadObject.remove();
             this.lazyLoadObject.remove();
@@ -163,6 +166,18 @@
                         index    : self.type,
                         scrollTop: scrollTop
                     });
+                    console.log(scrollTop, document.querySelector('.nav-tab').offsetTop, '+++++++++++++++++++++++++++++++++++++');
+                    if (scrollTop >= 46) {
+                        self.navTabFixed = {
+                            top     : 0,
+                            position: 'fixed',
+                        }
+                    } else {
+                        self.navTabFixed = {
+                            top     : '46px',
+                            position: 'absolute',
+                        }
+                    }
                 },
                 callback() {
                     console.log('到达底部');
@@ -174,7 +189,7 @@
             console.log('上次的位置', this.homeScrollTop[this.type]);
             self.bottomLoadObject = new BottomLoad(options);
 
-            let timer = setInterval(() => {
+            let timer                                     = setInterval(() => {
                 if (self.activePage < 1) {
                     return;
                 }
@@ -184,8 +199,7 @@
                     selector: 'data-src'
                 });
             }, 1);
-
-            document.querySelector('body').scrollTop = this.homeScrollTop[this.type];
+            document.querySelector('body,html').scrollTop = this.homeScrollTop[this.type];
         }
     }
 </script>

@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <header-tpl></header-tpl>
         <transition :name="transitionName">
             <keep-alive>
                 <router-view class="router-view"></router-view>
@@ -9,13 +10,18 @@
 </template>
 
 <script>
+    import headerTpl from './views/header/header';
+
     export default {
-        name : 'App',
+        name      : 'App',
         data() {
             return {
                 isShow        : false,
                 transitionName: 'vux-pop-in'
             }
+        },
+        components: {
+            headerTpl,
         },
         beforeRouteUpdate(to, from, next) {
             console.log(this.$router.isBack);
@@ -28,7 +34,7 @@
             this.$router.isBack = false
             next()
         },
-        watch: {
+        watch     : {
             '$route'(to, from) {
                 console.log('前一页 from = ' + from.query.key)
                 console.log('准备进入的页面是  to = ' + to.query.key)
@@ -42,11 +48,17 @@
                     this.transitionName = 'vux-pop-in'
                 }
             }
-        }
+        },
     }
 </script>
 
 <style>
+    #app {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .router-view {
         /*position: absolute;*/
         width: 100%;

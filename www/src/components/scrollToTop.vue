@@ -10,7 +10,7 @@
         props  : ['isShowToTop'],
         methods: {
             clickScrollToTop() {
-                document.querySelector('body').scrollTop = 0;
+                document.querySelector('body,html').scrollTop = 0;
             },
         },
     }

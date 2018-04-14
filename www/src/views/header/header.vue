@@ -1,6 +1,6 @@
 <template>
-    <x-header style="position:fixed;top:0;left:0;right:0;z-index:1000;" :left-options="{showBack:showBack}">{{
-        headerTitle}}
+    <x-header class="header" style="position:absolute;top:0;left:0;right:0;z-index:1000;"
+              :left-options="{showBack:showBack}">{{ headerTitle }}
     </x-header>
 </template>
 
@@ -27,5 +27,4 @@
 </script>
 
 <style>
-
 </style>
