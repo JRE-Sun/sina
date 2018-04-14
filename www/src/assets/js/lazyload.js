@@ -4,7 +4,7 @@ let self;
  * 图片懒加载
  */
 class LazyLoad {
-    constructor({scroller = 'body', selector, toBottom = 200, eleClientHeight = 'body',} = {}) {
+    constructor({scroller = window, selector, toBottom = 200, eleClientHeight = 'body',} = {}) {
         this.selector = selector;
         if (!selector) {
             console.log('lazyload运行失败->必须传入selector');
@@ -29,8 +29,24 @@ class LazyLoad {
         this.autoLoad();
     }
 
+    getScroller() {
+        let scroller, scrollTop;
+        console.log(this.scroller == window);
+        if (this.scroller == window) {
+            scroller  = this.scroller;
+            scrollTop = this.scroller.scrollY;
+        } else {
+            scroller  = document.querySelector(this.scroller);
+            scrollTop = scroller.scrollTop;
+        }
+        return {
+            scroller : scroller,
+            scrollTop: scrollTop,
+        }
+    }
+
     addEvent() {
-        document.querySelector(this.scroller).addEventListener('scroll', this.loadHandler, false);
+        this.getScroller().scroller.addEventListener('scroll', this.loadHandler, false);
     }
 
     autoLoad() {
@@ -49,7 +65,7 @@ class LazyLoad {
             }
 
             var eleTop          = selfImg.offsetTop,
-                windowScrollTop = document.querySelector(this.scroller).scrollTop;
+                windowScrollTop = this.getScroller().scrollTop;
 
             // 判断元素是否到达窗口底部
             if (eleTop - this.toBottom <= windowScrollTop + this.windowHeight) {
@@ -86,7 +102,7 @@ class LazyLoad {
 
     remove() {
         console.log('解除lazyload事件');
-        document.querySelector(this.scroller).removeEventListener('scroll', this.loadHandler, false);
+        this.getScroller().scroller.removeEventListener('scroll', this.loadHandler, false);
     }
 }
 

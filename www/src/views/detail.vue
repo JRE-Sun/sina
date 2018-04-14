@@ -54,12 +54,6 @@
 </script>
 
 <style>
-    html, body {
-        background-color: #F9F9F9;
-        width: 100%;
-        height: 100%;
-    }
-
     .detail-content {
         width: 100%;
         margin-top: 50px;

@@ -47,14 +47,8 @@
 </script>
 
 <style>
-    html, body {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
     .router-view {
-        position: absolute;
+        /*position: absolute;*/
         width: 100%;
         height: 100%;
         top: 0;

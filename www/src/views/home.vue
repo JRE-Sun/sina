@@ -1,7 +1,8 @@
 <template>
     <div>
-        <header-tpl></header-tpl>
-        <tab style="position:fixed;top:46px;left:0;width:100%;" active-color='#fc378c' v-model="headerSelectIndex">
+        <header-tpl class="content-width"></header-tpl>
+        <tab style="position:fixed;top:46px;left:0;right:0;width:100%;" active-color='#fc378c'
+             v-model="headerSelectIndex" class="content-width">
             <tab-item v-for="(item,index) in headerList" v-bind:key="index" @on-item-click="onItemClick">{{ item }}
             </tab-item>
         </tab>
@@ -152,8 +153,9 @@
         activated() {
             let self    = this;
             let options = {
-                eleClientHeight: '.time-line-wrap',
+                // eleClientHeight: '.time-line-wrap',
                 isScrolling({screenHeight, scrollTop} = {}) {
+                    console.log(screenHeight, scrollTop);
                     // 向下滚动超过一瓶,出现回到顶部按钮
                     self.isShowToTop = scrollTop > screenHeight ? true : false;
                     // 存储list的top
@@ -178,8 +180,8 @@
                 }
                 clearInterval(timer);
                 self.lazyLoadObject = new LazyLoad({
-                    eleClientHeight: '.time-line-wrap',
-                    selector       : 'data-src'
+                    // eleClientHeight: '.time-line-wrap',
+                    selector: 'data-src'
                 });
             }, 1);
 

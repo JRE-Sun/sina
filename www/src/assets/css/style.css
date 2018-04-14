@@ -1,7 +1,13 @@
 html, body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    width: 100%;
+    background-color: #F9F9F9;
+    max-width: 760px;
+    margin: 0 auto;
+    /*position: relative;*/
+    min-height: 100%;
+    /*overflow-x: hidden;*/
     -webkit-overflow-scrolling: touch;
     font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -13,4 +19,10 @@ a {
     -webkit-user-select: none;
     -moz-user-focus: none;
     -moz-user-select: none;
+}
+
+.content-width {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
 }

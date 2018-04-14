@@ -11,9 +11,9 @@ var self;
  * screenHeight:屏幕的高                  (选)默认窗口可视区高
  */
 class BottomLoad {
-    constructor({ele = 'body', callback, toBottom = 200, isScrolling, eleClientHeight = 'body', screenHeight = window.innerHeight} = {}) {
+    constructor({ele = window, callback, toBottom = Math.ceil(window.innerHeight / 5), isScrolling, eleClientHeight = 'body', screenHeight = window.innerHeight} = {}) {
         self                 = this;
-        this.ele             = document.querySelector(ele);
+        this.ele             = ele != window ? document.querySelector(ele) : window;
         this.toBottom        = toBottom;
         this.eleClientHeight = eleClientHeight;
         this.screenHeight    = screenHeight;
@@ -38,15 +38,15 @@ class BottomLoad {
         if (endTime - startTime < 27) {
             return;
         }
+        let scrollTop = self.ele == window ? self.ele.scrollY : e.srcElement.scrollTop;
         if (self.isScrolling) {
             self.isScrolling({
                 screenHeight: self.screenHeight,
-                scrollTop   : e.srcElement.scrollTop,
+                scrollTop   : scrollTop,
             });
         }
         // 总得高 = 屏幕上的高 + 滚动的高
-        if (self.callback && (document.querySelector(self.eleClientHeight).clientHeight - self.toBottom <= self.screenHeight +
-                e.srcElement.scrollTop)) {
+        if (self.callback && (document.querySelector(self.eleClientHeight).clientHeight - self.toBottom <= self.screenHeight + scrollTop)) {
             self.callback();
         }
         self.startTime = endTime;
