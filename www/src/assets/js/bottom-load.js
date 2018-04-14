@@ -32,6 +32,7 @@ class BottomLoad {
     }
 
     loadHandler(e) {
+        //todo 这里还需要考虑滚动的巨快
         let endTime   = new Date().getTime();
         let startTime = self.startTime;
         // 27ms内不触发
