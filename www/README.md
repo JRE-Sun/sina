@@ -54,3 +54,10 @@
 3. vue项目如何按需加载svg图标
     * 去github上下载vue-svg-icon组件,能够实现svg的按需加载
     * 按照vue-svg-icon的说明文档可能会出错误,是因为需要安装以来`npm install xml-loader`
+    
+# 4月14
+
+**功能已经基本完善,有些细节需要修复,但是当我拿到ios上测试的时候,完全和在pc上不一样,fixed布局崩溃...等等...**
+
+> 待完成:
+* 修复css
